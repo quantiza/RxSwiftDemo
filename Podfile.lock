@@ -1,0 +1,30 @@
+PODS:
+  - RxCocoa (5.1.1):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.1):
+    - RxSwift (~> 5)
+  - RxSwift (5.1.1)
+
+DEPENDENCIES:
+  - RxCocoa (from `~/Document/RxSwift`)
+  - RxSwift (from `~/Document/RxSwift`)
+
+SPEC REPOS:
+  trunk:
+    - RxRelay
+
+EXTERNAL SOURCES:
+  RxCocoa:
+    :path: "~/Document/RxSwift"
+  RxSwift:
+    :path: "~/Document/RxSwift"
+
+SPEC CHECKSUMS:
+  RxCocoa: b80a2a7f76735ef76acbd28718ac47d9df9abda0
+  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
+  RxSwift: 9507f0f0282b09cc1a9c5b0aa716f43f4b88dd79
+
+PODFILE CHECKSUM: ed8c903feb0f9fe41ba0a8aef958d8e4adce1411
+
+COCOAPODS: 1.9.3
