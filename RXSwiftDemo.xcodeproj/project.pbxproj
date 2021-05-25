@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C52AC2E265CF63F00BE0D1A /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C52AC2D265CF63F00BE0D1A /* SimpleValidationViewController.swift */; };
+		2C52AC31265CFDC300BE0D1A /* Simplevalidation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C52AC2F265CFDC300BE0D1A /* Simplevalidation.storyboard */; };
 		2CCEC016265B512C0048C79E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEC015265B512C0048C79E /* AppDelegate.swift */; };
 		2CCEC018265B512C0048C79E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEC017265B512C0048C79E /* SceneDelegate.swift */; };
 		2CCEC01A265B512C0048C79E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCEC019265B512C0048C79E /* ViewController.swift */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		04508DB8925CE8B69CE90E8B /* Pods-RXSwiftDemo-RXSwiftDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RXSwiftDemo-RXSwiftDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-RXSwiftDemo-RXSwiftDemoUITests/Pods-RXSwiftDemo-RXSwiftDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1820610116CFFC62F999DA55 /* Pods_RXSwiftDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RXSwiftDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C52AC2D265CF63F00BE0D1A /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		2C52AC30265CFDC300BE0D1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = RXSwiftDemo/Base.lproj/Simplevalidation.storyboard; sourceTree = SOURCE_ROOT; };
 		2CCEC012265B512C0048C79E /* RXSwiftDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RXSwiftDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CCEC015265B512C0048C79E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2CCEC017265B512C0048C79E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +119,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		2C52ABED265CEF0400BE0D1A /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				2C52ABEE265CEF1300BE0D1A /* SimpleValidation */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		2C52ABEE265CEF1300BE0D1A /* SimpleValidation */ = {
+			isa = PBXGroup;
+			children = (
+				2C52AC2F265CFDC300BE0D1A /* Simplevalidation.storyboard */,
+				2C52AC2D265CF63F00BE0D1A /* SimpleValidationViewController.swift */,
+			);
+			path = SimpleValidation;
+			sourceTree = "<group>";
+		};
 		2CCEC009265B512C0048C79E = {
 			isa = PBXGroup;
 			children = (
@@ -141,6 +162,7 @@
 		2CCEC014265B512C0048C79E /* RXSwiftDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2C52ABED265CEF0400BE0D1A /* Example */,
 				2CCEC015265B512C0048C79E /* AppDelegate.swift */,
 				2CCEC017265B512C0048C79E /* SceneDelegate.swift */,
 				2CCEC019265B512C0048C79E /* ViewController.swift */,
@@ -281,6 +303,7 @@
 				2CCEC022265B512D0048C79E /* LaunchScreen.storyboard in Resources */,
 				2CCEC01F265B512D0048C79E /* Assets.xcassets in Resources */,
 				2CCEC01D265B512C0048C79E /* Main.storyboard in Resources */,
+				2C52AC31265CFDC300BE0D1A /* Simplevalidation.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +434,7 @@
 				2CCEC01A265B512C0048C79E /* ViewController.swift in Sources */,
 				2CCEC016265B512C0048C79E /* AppDelegate.swift in Sources */,
 				2CCEC018265B512C0048C79E /* SceneDelegate.swift in Sources */,
+				2C52AC2E265CF63F00BE0D1A /* SimpleValidationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +470,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		2C52AC2F265CFDC300BE0D1A /* Simplevalidation.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2C52AC30265CFDC300BE0D1A /* Base */,
+			);
+			name = Simplevalidation.storyboard;
+			sourceTree = "<group>";
+		};
 		2CCEC01B265B512C0048C79E /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

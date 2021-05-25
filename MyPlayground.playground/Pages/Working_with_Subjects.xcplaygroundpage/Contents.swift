@@ -76,7 +76,6 @@ example("BehaviorSubject") {
 
 /*:
  > `PublishSubject`, `ReplaySubject` 和 `BehaviorSubject`在即将释放时不会自动发出 Completed 事件
- > Notice what's missing in these previous examples? A Completed event. `PublishSubject`, `ReplaySubject`, and `BehaviorSubject` do not automatically emit Completed events when they are about to be disposed of.
 */
 
 //: [Next](@next)
