@@ -11,5 +11,6 @@
         <page name='Connectable_Operators'/>
         <page name='Error_Handling_Operators'/>
         <page name='Debugging_Operators'/>
+        <page name='Custom_Example'/>
     </pages>
 </playground>

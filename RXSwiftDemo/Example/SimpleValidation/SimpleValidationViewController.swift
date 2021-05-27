@@ -32,30 +32,56 @@ class SimpleValidationViewController: UIViewController {
         
         let usernameValid = usernameTF.rx.text.orEmpty
             .map { $0.count >= minimalUsernameLength }
-            .share(replay: 1)
+            .share()
         
         let passwordValid = passwordTF.rx.text.orEmpty
             .map { $0.count >= minimalPasswordLength }
-            .share(replay: 1)
+            .share()
         
         let everythingValid = Observable.combineLatest(usernameValid, passwordValid) { $0 && $1 }
-            .share(replay: 1)
+            .share()
         
+        // Example 0
+//        usernameValid.subscribe(onNext: {[weak self] in
+//            self?.passwordTF.isEnabled  = $0
+//        })
+//        .disposed(by: disposeBag)
+        
+        // Example 1, subscribe
         usernameValid
-            .bind(to: passwordTF.rx.isEnabled)
+            .subscribe(passwordTF.rx.isEnabled)
             .disposed(by: disposeBag)
         
         usernameValid
-            .bind(to: usernameValidLabel.rx.isHidden)
+            .subscribe(usernameValidLabel.rx.isHidden)
             .disposed(by: disposeBag)
         
         passwordValid
-            .bind(to: passwordValidLabel.rx.isHidden)
+            .subscribe(passwordValidLabel.rx.isHidden)
             .disposed(by: disposeBag)
         
         everythingValid
-            .bind(to: doBtn.rx.isEnabled)
+            .subscribe(doBtn.rx.isEnabled)
             .disposed(by: disposeBag)
+        
+        
+        
+        // Example 2, bind
+//        usernameValid
+//            .bind(to: passwordTF.rx.isEnabled)
+//            .disposed(by: disposeBag)
+        
+//        usernameValid
+//            .bind(to: usernameValidLabel.rx.isHidden)
+//            .disposed(by: disposeBag)
+        
+//        passwordValid
+//            .bind(to: passwordValidLabel.rx.isHidden)
+//            .disposed(by: disposeBag)
+        
+//        everythingValid
+//            .bind(to: doBtn.rx.isEnabled)
+//            .disposed(by: disposeBag)
         
         doBtn.rx.tap
             .subscribe(onNext: { print("RxExample is wonderful!!") })
