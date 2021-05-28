@@ -4,5 +4,6 @@
         <page name='Protocol'/>
         <page name='Special'/>
         <page name='Test'/>
+        <page name='Codable'/>
     </pages>
 </playground>

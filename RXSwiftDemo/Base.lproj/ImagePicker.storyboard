@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6Th-IJ-bd1">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ImagePicker-->
+        <scene sceneID="TgM-dC-OiF">
+            <objects>
+                <viewController id="6Th-IJ-bd1" customClass="ImagePickerController" customModule="RXSwiftDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="C1B-ot-q5p">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="k1C-mR-HTG">
+                                <rect key="frame" x="20" y="104" width="374" height="318"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JaC-ak-ohZ">
+                                <rect key="frame" x="180" y="432" width="54" height="30"/>
+                                <state key="normal" title="Camera"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlw-PE-0eN">
+                                <rect key="frame" x="183" y="482" width="48" height="30"/>
+                                <state key="normal" title="Gallery"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f10-rB-W4W">
+                                <rect key="frame" x="190" y="532" width="34" height="30"/>
+                                <state key="normal" title="Crop"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XIC-nm-grx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="XIC-nm-grx" firstAttribute="bottom" secondItem="f10-rB-W4W" secondAttribute="bottom" constant="300" id="05Z-BH-W1x"/>
+                            <constraint firstItem="xlw-PE-0eN" firstAttribute="top" secondItem="JaC-ak-ohZ" secondAttribute="bottom" constant="20" id="6bk-In-r3R"/>
+                            <constraint firstItem="xlw-PE-0eN" firstAttribute="centerX" secondItem="JaC-ak-ohZ" secondAttribute="centerX" id="LRD-EJ-juf"/>
+                            <constraint firstItem="XIC-nm-grx" firstAttribute="trailing" secondItem="k1C-mR-HTG" secondAttribute="trailing" constant="20" id="TDC-Dy-XfE"/>
+                            <constraint firstItem="JaC-ak-ohZ" firstAttribute="centerX" secondItem="k1C-mR-HTG" secondAttribute="centerX" id="aD4-An-8NB"/>
+                            <constraint firstItem="k1C-mR-HTG" firstAttribute="top" secondItem="XIC-nm-grx" secondAttribute="top" constant="60" id="aHe-14-tyw"/>
+                            <constraint firstItem="f10-rB-W4W" firstAttribute="top" secondItem="xlw-PE-0eN" secondAttribute="bottom" constant="20" id="bJk-cX-QDC"/>
+                            <constraint firstItem="JaC-ak-ohZ" firstAttribute="top" secondItem="k1C-mR-HTG" secondAttribute="bottom" constant="10" id="c4S-Zv-HAT"/>
+                            <constraint firstItem="f10-rB-W4W" firstAttribute="centerX" secondItem="JaC-ak-ohZ" secondAttribute="centerX" id="cRf-53-gwP"/>
+                            <constraint firstItem="k1C-mR-HTG" firstAttribute="leading" secondItem="XIC-nm-grx" secondAttribute="leading" constant="20" id="umO-ri-pPE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="ImagePicker" id="rPQ-We-Ftb"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="JaC-ak-ohZ" id="ySj-Mw-DUF"/>
+                        <outlet property="cropButton" destination="f10-rB-W4W" id="iS8-Zv-9gk"/>
+                        <outlet property="galleryButton" destination="xlw-PE-0eN" id="I47-2y-9W6"/>
+                        <outlet property="imageView" destination="k1C-mR-HTG" id="eV5-UA-MoD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2s3-TO-Oge" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2779.7101449275365" y="0.6696428571428571"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
