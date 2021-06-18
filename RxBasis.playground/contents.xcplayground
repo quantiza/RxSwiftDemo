@@ -1,16 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
-    <pages>
-        <page name='Introduction'/>
-        <page name='Creating_and_Subscribing_to_Observables'/>
-        <page name='Working_with_Subjects'/>
-        <page name='Combining_Operators'/>
-        <page name='Transforming_Operators'/>
-        <page name='Filtering_and_Conditional_Operators'/>
-        <page name='Mathematical_and_Aggregate_Operators'/>
-        <page name='Connectable_Operators'/>
-        <page name='Error_Handling_Operators'/>
-        <page name='Debugging_Operators'/>
-        <page name='Custom_Example'/>
-    </pages>
-</playground>
+<playground version='6.0' target-platform='ios' display-mode='raw' buildActiveScheme='true' importAppTypes='true'/>

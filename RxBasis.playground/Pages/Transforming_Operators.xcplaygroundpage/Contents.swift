@@ -19,7 +19,6 @@ example("map") {
         .subscribe(onNext: { print($0) })
         .disposed(by: disposeBag)
 }
-
 /*:
  ----
  ## `flatMap` and `flatMapLatest`
