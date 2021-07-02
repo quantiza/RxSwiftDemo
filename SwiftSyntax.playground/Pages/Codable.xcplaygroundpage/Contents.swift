@@ -13,6 +13,37 @@ struct Team: Codable {
     var memebers: [Person]
 }
 
+class CodableClass: Codable {
+    var answer: Int
+    var name: String
+    public init(answer: Int, name: String) {
+        self.answer = answer
+        self.name = name
+    }
+}
+
+let myClass = CodableClass(answer: 42, name: "Author Tim")
+let archiver = NSKeyedArchiver(requiringSecureCoding: true)
+
+do {
+    try archiver.encodeEncodable(myClass, forKey: NSKeyedArchiveRootObjectKey)
+} catch {
+    fatalError(error.localizedDescription)
+}
+
+archiver.finishEncoding()
+
+
+if let unarchiver = try? NSKeyedUnarchiver(forReadingFrom: archiver.encodedData) {
+    unarchiver.decodingFailurePolicy = .setErrorAndReturn
+    let decoded = unarchiver.decodeDecodable(CodableClass.self, forKey: NSKeyedArchiveRootObjectKey)
+    unarchiver.finishDecoding()
+    print(decoded?.name, decoded?.answer)
+}
+
+
+
+
 /*:
  ---
  ## JSONEncoder
